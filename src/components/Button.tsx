@@ -1,9 +1,10 @@
+import { MouseEvent } from "react";
 
 
 interface Props{
     color:'primary'|'warning'|'success'
     children:string
-    handleClick:()=>void;
+    handleClick:(e:MouseEvent<HTMLButtonElement>)=>void;
 
 }
 

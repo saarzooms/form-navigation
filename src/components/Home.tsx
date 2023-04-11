@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { MouseEvent } from 'react'
 import Button from './Button'
 
 const Home = () => {
     const handleClick = ()=>{
         console.log('Button clicked from home ');
     }
-    const handleClickWarning = ()=>{
-        console.log('Warning Button clicked from home ');
+    const handleClickWarning = (e:MouseEvent<HTMLButtonElement>)=>{
+        console.log('Warning Button clicked from home ',e.target);
     }
   return (
     <div>
